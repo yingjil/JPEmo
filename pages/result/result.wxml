@@ -1,0 +1,14 @@
+<!--results.wxml-->
+<view class="main">
+  <!-- 背景色 -->
+  <view class="bg-color"></view>
+  <!-- 背景图 -->
+  <image src="{{bgsrc}}" class="bg-image" id="bg-image" />
+
+  <view class="start-btn">
+    <button bindtap="getEmotion" class="start-btn__box">
+      上传我的心情
+    </button> 
+  </view>
+
+</view>

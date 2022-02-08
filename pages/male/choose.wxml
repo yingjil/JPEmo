@@ -1,0 +1,34 @@
+<!--pages/lucky-turntable.wxml-->
+<view class="main">
+  <view class="nav" style="height: {{navHeight}}px;">
+    <view class="nav__title {{status === 'iOS'? 'iOS' : 'Android'}}" style="margin-top: {{statusBarHeight}}px;">小微祝福</view>
+  </view>
+  <!-- 背景色 -->
+  <view class="bg-color"></view>
+  <!-- 背景图 -->
+  <image src="/images/head2.png" class="bg-image" style="top: {{navHeight + 3}}px;" />
+
+  <view class="options">
+    <view class="options__gd" bindtap="handleRefuse">
+      <view class="options__icon">
+        <image src="{{avatarUrl}}" class="options__gd-img" />
+      </view>
+    </view>
+    <view class="options__jt" bindtap="handleAnswer">
+      <view class="options__icon">
+        <image src="/images/question.png" class="options__jt-img" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 转盘 -->
+  <view class="turntable">
+
+  </view>
+  <!-- 开始按钮 -->
+  <view class="start-btn">
+    <button bindgetuserinfo="getUserName" open-type="getUserInfo" class="start-btn__box">
+      开始配对
+    </button> 
+  </view>
+</view>
