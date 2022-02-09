@@ -1,0 +1,17 @@
+/* pages/result/result.wxss */
+
+.main {
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 44rpx;
+}
+
+.bg-image {
+  width: 100vmax;
+  height: 100vmax;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}

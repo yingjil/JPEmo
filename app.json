@@ -1,0 +1,22 @@
+{
+  "cloud":true,
+  "pages": [
+    "pages/index/index",
+    "pages/male/choose",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0000FF",
+    "navigationBarTitleText": "月老牵线",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
+  }
+}

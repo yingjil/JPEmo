@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="main">
+  <!-- 背景色 -->
+  <view class="bg-color"></view>
+  <!-- 背景图 -->
+  <image src="/images/cover1.png" class="bg-image" />
+
+  <view class="tip">
+    <view class="tip__name">情人节配对</view>
+    <view class="tip__content">请选择你的性别</view>
+  </view>
+  <view class="options">
+    <view class="options__gd" bindtap="handleRefuse">
+      <view class="options__icon">
+        <image src="/images/male.png" class="options__gd-img" />
+      </view>
+    </view>
+    <view class="options__jt" bindtap="handleAnswer">
+      <view class="options__icon">
+        <image src="/images/female.png" class="options__jt-img" />
+      </view>
+    </view>
+  </view>
+</view>
