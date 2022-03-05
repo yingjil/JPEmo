@@ -3,7 +3,8 @@
   "pages": [
     "pages/index/index",
     "pages/male/choose",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/face/faceVideo"
   ],
   "window": {
     "backgroundTextStyle": "dark",

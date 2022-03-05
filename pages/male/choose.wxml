@@ -31,4 +31,10 @@
       开始配对
     </button> 
   </view>
+
+  <view class="start-btn">
+    <navigator url="../face/faceVideo" open-type="navigate" class="start-btn__box2">
+      <text>猜年龄</text>
+    </navigator>
+  </view>
 </view>
