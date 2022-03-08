@@ -86,4 +86,32 @@ Page({
     });
 
   },
+
+  getUserName() {
+    app.globalData.person = person;
+
+    wx.openSetting({})
+    var that = this;
+    wx.getUserInfo({
+      // 调用成功后触发（回调函数）
+      success: function(res) {
+        console.log("成功：", res.userInfo.nickName);
+        // 修改页面和后台数据
+        // that.setData({name: res.userInfo.nickName});
+        name = res.userInfo.nickName;
+
+
+        console.log(name);
+      },
+      // 调用失败后触发
+      fall: function (res) {
+        console.log("失败:", res);
+      }
+    });
+
+    wx.navigateTo({
+      url: `/pages/faceUpdate/faceVideo`,
+    });
+
+  },
 })

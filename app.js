@@ -7,6 +7,8 @@ App({
     person: null,
     sex: null,
     id : null,
-    avatarUrl:null
+    avatarUrl:null,
+    baiduApiKey: 'EVuj9lsnMMlwGTRaFHEiH5ZF',
+    baiduSecurityKey: 't2KhWAnaLZzPXsHpyKsCfSCBVWqumndZ'
   }
 })

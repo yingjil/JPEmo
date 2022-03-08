@@ -1,0 +1,25 @@
+<view class="img-container" wx:if="{{imgSrc && age==0}}">
+    <image src="{{imgSrc}}" class="face-img"></image>
+   
+    <view class="action-button-bar" bindtap="nextStep">
+      <text class="action-button-text">下一步</text>
+    </view>
+</view>
+<view class="img-container" wx:elif="{{imgSrc && age>0}}">
+  <view class="list-item">
+      <text>猜测年龄</text>
+      <input class="subscribe-input" auto-focus bindinput="bindAgeInput" placeholder="请输入猜测数字"/>
+  </view>
+  <view class="submit-bottom-bar" bindtap="sendGuessRequest">
+    <text class="submit-button-text">提交</text>
+  </view>
+</view>
+<view class="img-container" wx:else>
+    <camera device-position="front" flash="off" binderror="error" class="face-img"></camera>
+   
+    <view class="action-button-bar" bindtap="takePhoto">
+      <text class="action-button-text">拍照</text>
+    </view>
+</view>
+
+ 
